@@ -35,25 +35,76 @@ Bu çalışma, operasyonel süreçlerin anlaşılmasını ve müşteri davranı�
 - Eksik verilerin incelenmesi ve temizlenmesi  
 - Tarih kolonlarının `datetime` formatına dönüştürülmesi  
 - Outlier tespiti  
-- Yeni hesaplanmış metriklerin oluşturulması (örn. *delivery_time*)
+- Yeni hesaplanmış metriklerin oluşturulması (örn. `delivery_time`)
 
-### **2️⃣ Tanımlayıcı İstatistikler**
-- Teslimat süreleri dağılımı  
-- Ürün kategorisi bazlı sipariş davranışları  
-- Ödeme yöntemleri dağılımı  
-- Şehir & eyalet bazında sipariş yoğunlukları  
+---
 
-### **3️⃣ Görselleştirme (Plotly & Matplotlib)**
-- Teslimat süresi histogramı  
-- Boxplot analizleri  
-- Kategori bazlı satış grafikleri  
-- Coğrafi sipariş yoğunluğu  
-- Ödeme yöntemi – müşteri memnuniyeti ilişkisi  
+## **📈 Görselleştirme Sonuçları**
 
-### **4️⃣ İstatistiksel Testler**
-- Hızlı teslimat vs yavaş teslimat → memnuniyet farkı testi  
-- Ürün kategorileri arasında sipariş tutarı farkı → ANOVA  
-- Ödeme yöntemi vs sipariş tamamlanma → Chi-Square  
+### **🟦 Sipariş Toplam Fiyat Dağılımı**
+![Order Total Price Histogram](images/order_total_price_hist.png)
+
+---
+
+### **🟪 En Çok Ürüne Sahip İlk 15 Kategori**
+![Top 15 Product Categories](images/top15_product_categories.png)
+
+---
+
+### **🟧 Ödeme Yöntemi Dağılımı**
+![Payment Type Distribution](images/payment_type_distribution.png)
+
+---
+
+### **🟩 Teslimat Süresi Dağılımı — Histogram**
+![Delivery Time Histogram](images/delivery_time_hist.png)
+
+---
+
+### **🟩 Teslimat Süresi — Boxplot**
+![Delivery Time Boxplot](images/delivery_time_boxplot.png)
+
+---
+
+### **🟦 Müşteri Memnuniyet Skor Dağılımı**
+![Review Score Distribution](images/review_score_distribution.png)
+
+---
+
+### **🟨 Teslimat Hızı ve Müşteri Memnuniyeti**
+*(Hızlı teslim vs yavaş teslim — T-test sonucu görselleştirilmiştir)*  
+![Delivery Time vs Review Score](images/delivery_time_vs_review_score_boxplot.png)
+
+---
+
+### **🟥 Kategori Bazında Sipariş Değerleri (ANOVA)**
+![Category Total Price Boxplot](images/category_total_price_boxplot.png)
+
+---
+
+### **🟫 Ödeme Yöntemine Göre Teslim Edilme Oranları (Chi-Square)**
+![Payment Delivery Rate](images/payment_delivery_rate_bar.png)
+
+---
+
+## **📈 İstatistiksel Testler**
+
+### **1️⃣ Teslimat Süresi → Memnuniyet (T-Testi)**
+- p-değeri: **0.0000**
+- **Anlamlı fark vardır.**
+- Hızlı teslim alan müşteriler daha yüksek memnuniyet bildirir.
+
+---
+
+### **2️⃣ Ürün Kategorileri → Sipariş Değeri (ANOVA)**
+- p-değeri: **0.0000**
+- **Kategoriler arasında fiyat açısından anlamlı fark vardır.**
+
+---
+
+### **3️⃣ Ödeme Yöntemi → Siparişin Tamamlanması (Chi-Square)**
+- p-değeri: **6.99e-36**
+- **Bazı ödeme yöntemleri daha yüksek başarısızlık oranına sahiptir.**
 
 ---
 
@@ -64,20 +115,19 @@ Kaggle – **Brazilian E-Commerce Public Dataset by Olist**
 ---
 
 ## 🚀 Notebook
-Notebook: **Olist_Veri_Analizi_Projesi.ipynb**
-
-Tüm veri temizleme, analiz ve görselleştirmeler adım adım açıklamalarla işlenmiştir.
+Notebook dosyası: **Olist_Veri_Analizi_Projesi.ipynb**  
+Tüm veri temizleme, analiz ve görselleştirmeler adım adım anlatılmıştır.
 
 ---
 
 ## 🧠 Kazanımlar
 Bu projede:
 
-- Veri temizleme & preprocessing  
+- Veri temizleme  
 - Gerçek iş verisinde EDA  
-- Plotly ile interaktif grafikler  
-- İstatistiksel testler  
-- Operasyonel metrik üretimi  
+- Plotly ile interaktif grafik üretimi  
+- İstatistiksel hipotez testleri  
+- Operasyonel metrik çıkarımı  
 - Veri hikayeleştirme  
 
 yetkinlikleri geliştirilmiştir.
@@ -90,4 +140,4 @@ MIT Lisansı altında sunulmuştur.
 ---
 
 ## 🤝 İletişim  
-Her türlü geri bildirim ve öneri için memnuniyetle dönüş yaparım!  
+Her türlü geri bildirim ve öneri için memnuniyetle dönüş yaparım!
