@@ -1,158 +1,93 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gokce-yuksel/olist-ecommerce-analysis/3da26bd8f7b125a4647cdb618c6f4d286eea6ff2/images/Image%2023%20Kas%202025%2006_04_11.png" alt="Olist Brazilian E-Commerce Analysis" width="850">
+  <img src="https://raw.githubusercontent.com/gokce-yuksel/olist-ecommerce-analysis/main/images/banner.png" width="850">
 </p>
 
-
-
-
-Brazilian E-Commerce Data Analysis with Python
+# 📦 Olist Brazilian E-Commerce Data Analysis
+**Brazilian Online Retail – Data Cleaning, Exploratory Data Analysis, Customer Behavior Insights & A/B Testing**
 
 ![Python](https://img.shields.io/badge/Python-3.10-yellow)
-![EDA](https://img.shields.io/badge/EDA-Exploratory%20Analysis-blue)
+![EDA](https://img.shields.io/badge/EDA-Exploratory%20Data%20Analysis-blue)
 ![Statistics](https://img.shields.io/badge/Statistics-T--Test%20%7C%20ANOVA%20%7C%20ChiSquare-green)
 ![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-orange)
-
-
-# 📦 Olist Brazilian E-Commerce Data Analysis  
-*Brazilian Online Retail – Data Exploration, Statistics, Visualization & A/B Testing*
-
-[![Dataset Badge](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-[![Python](https://img.shields.io/badge/Python-3.10-yellow)]()
-[![Colab](https://img.shields.io/badge/Colab-Notebook-orange)]()
-[![License](https://img.shields.io/badge/License-MIT-green)]()
+![Colab](https://img.shields.io/badge/Colab-Notebook-orange)
 
 ---
 
-## 📌 Proje Hakkında
-Bu proje, **Olist** tarafından sağlanan kapsamlı Brezilya e-ticaret veri setini analiz ederek iş süreçleri, müşteri davranışları ve sipariş operasyonları hakkında anlamlı içgörüler üretmeyi amaçlar.
+## 🔍 Proje Hakkında
+Brezilya'nın en büyük e-ticaret platformlarından **Olist** tarafından sağlanan veri seti kullanılarak:
 
-Çalışma boyunca:
-- Veri temizleme  
-- Keşifsel veri analizi (EDA)  
-- Görselleştirme  
-- Hipotez testleri (T-test, ANOVA, Ki-Kare)  
-- İş çıkarımlarının oluşturulması  
-adımları uygulanmıştır.
+- Sipariş akışı  
+- Ürün & kategori yapısı  
+- Müşteri lokasyonları  
+- Teslimat süreleri  
+- Ödeme davranışları  
+- Müşteri memnuniyeti skorları  
 
-📄 Notebook dosyası: **`olist_analysis.ipynb`**
+analiz edilmiştir.
+
+Bu çalışma, operasyonel süreçlerin anlaşılmasını ve müşteri davranışlarına yönelik **veri destekli içgörüler** üretilmesini amaçlar.
 
 ---
 
-## 📂 Proje Yapısı
+## 📊 Analiz Kapsamı
 
-```plaintext
-/olist-ecommerce-analysis
-│
-├── olist_analysis.ipynb        # Ana analiz notebook'u
-├── README.md                    # Bu dosya
-└── /images                      # Kaydedilen grafikler
+### **1️⃣ Veri Ön İşleme**
+- Eksik verilerin incelenmesi ve temizlenmesi  
+- Tarih kolonlarının `datetime` formatına dönüştürülmesi  
+- Outlier tespiti  
+- Yeni hesaplanmış metriklerin oluşturulması (örn. *delivery_time*)
 
+### **2️⃣ Tanımlayıcı İstatistikler**
+- Teslimat süreleri dağılımı  
+- Ürün kategorisi bazlı sipariş davranışları  
+- Ödeme yöntemleri dağılımı  
+- Şehir & eyalet bazında sipariş yoğunlukları  
 
+### **3️⃣ Görselleştirme (Plotly & Matplotlib)**
+- Teslimat süresi histogramı  
+- Boxplot analizleri  
+- Kategori bazlı satış grafikleri  
+- Coğrafi sipariş yoğunluğu  
+- Ödeme yöntemi – müşteri memnuniyeti ilişkisi  
 
-🧠 Kullanılan Veri Seti
+### **4️⃣ İstatistiksel Testler**
+- Hızlı teslimat vs yavaş teslimat → memnuniyet farkı testi  
+- Ürün kategorileri arasında sipariş tutarı farkı → ANOVA  
+- Ödeme yöntemi vs sipariş tamamlanma → Chi-Square  
 
-Kaynak:
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+---
 
-İçerik:
+## 📁 Kullanılan Veri Seti
+Kaggle – **Brazilian E-Commerce Public Dataset by Olist**  
+🔗 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
-7 tablo
+---
 
-100.000+ sipariş
+## 🚀 Notebook
+Notebook: **Olist_Veri_Analizi_Projesi.ipynb**
 
-70.000+ müşteri
+Tüm veri temizleme, analiz ve görselleştirmeler adım adım açıklamalarla işlenmiştir.
 
-3 yıllık işlemler
+---
 
-Ödeme, ürün, teslimat, yorum ve müşteri bilgileri
+## 🧠 Kazanımlar
+Bu projede:
 
-🎯 Projenin Hedefleri
+- Veri temizleme & preprocessing  
+- Gerçek iş verisinde EDA  
+- Plotly ile interaktif grafikler  
+- İstatistiksel testler  
+- Operasyonel metrik üretimi  
+- Veri hikayeleştirme  
 
-Bu çalışmanın analitik amaçları:
+yetkinlikleri geliştirilmiştir.
 
-🛒 Müşteri davranışlarını anlamak
+---
 
-🚚 Teslimat sürelerini ve sipariş başarısını analiz etmek
+## 📄 Lisans  
+MIT Lisansı altında sunulmuştur.
 
-⭐ Müşteri memnuniyeti ile operasyon arasındaki ilişkiyi incelemek
+---
 
-💳 Ödeme yöntemlerinin teslimat başarısına etkisini ölçmek
-
-📈 Kategori bazlı fiyat ve ürün farklılıklarını test etmek
-
-🔍 A/B testleri ve istatistiksel testlerle hipotez doğrulamak
-
-📊 Temel Bulgular
-⭐ 1. Müşteri Memnuniyeti
-
-Ortalama puan 4.08
-
-%77’si 4 veya 5 puan → yüksek memnuniyet
-
-1 puan veren müşteriler genelde gecikme yaşamış
-
-🚚 2. Teslimat Süresi İçgörüleri
-
-Hızlı teslimat alan müşteriler anlamlı şekilde daha yüksek memnuniyet bildiriyor (T-Test, p < 0.001)
-
-Teslimat gecikmeleri yorumlarda belirgin
-
-🏷️ 3. Ürün Kategorileri (ANOVA)
-
-Kategoriler arasında toplam sipariş fiyatı anlamlı farklılık gösteriyor (p < 0.001)
-
-En yoğun ürün kategorileri: cama_mesa_banho, esporte_lazer, moveis_decoracao
-
-💳 4. Ödeme Yöntemi – Teslimat İlişkisi (Ki-Kare)
-
-Ödeme yöntemi ile teslim edilme durumu arasında anlamlı ilişki var
-
-Kredi kartı siparişlerinde teslim edilmeme oranı çok düşük
-
-Boleto/voucher siparişleri daha riskli
-
-
-📈 Görsel Örnekler
-
-README içinde grafik göstermek için:
-
-![Delivery Boxplot](images/delivery_boxplot.png)
-![Review Distribution](images/review_scores.png)
-
-
-🛠️ Kullanılan Teknolojiler
-
-Python
-
-Pandas, NumPy
-
-Plotly, Matplotlib
-
-SciPy (T-Test, ANOVA, Chi-Square)
-
-Google Colab
-
-
-💾 Colab’da Grafik Kaydetme Kodu
-fig.write_image("images/delivery_boxplot.png")
-
-
-
-📘 Sonuç
-
-Bu proje, Olist veri seti üzerinden:
-
-Operasyonel performansı
-
-Müşteri memnuniyetini
-
-Ürün & fiyat stratejilerini
-
-Ödeme yöntemlerinin risk analizini
-
-istatistiksel olarak değerlendirmeyi ve iş çıkarımları üretmeyi başarmıştır.
-
-👤 Katkıda Bulunan
-
-Gökçe Yüksel
-Data Analyst | Python & SQL | Machine Learning
+## 🤝 İletişim  
+Her türlü geri bildirim ve öneri için memnuniyetle dönüş yaparım!  
