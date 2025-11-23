@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[images/Image 23 Kas 2025 06_04_11.png](https://raw.githubusercontent.com/gokce-yuksel/olist-ecommerce-analysis/3da26bd8f7b125a4647cdb618c6f4d286eea6ff2/images/Image%2023%20Kas%202025%2006_04_11.png)" alt="Olist Brazilian E-Commerce Analysis" width="850">
+  <img src="https://raw.githubusercontent.com/gokce-yuksel/olist-ecommerce-analysis/3da26bd8f7b125a4647cdb618c6f4d286eea6ff2/images/Image%2023%20Kas%202025%2006_04_11.png" alt="Olist Brazilian E-Commerce Analysis" width="850">
 </p>
 
 
