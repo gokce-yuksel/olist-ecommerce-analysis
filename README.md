@@ -4,7 +4,7 @@
 
 
 
-# olist-ecommerce-analysis
+
 Brazilian E-Commerce Data Analysis with Python
 
 ![Python](https://img.shields.io/badge/Python-3.10-yellow)
