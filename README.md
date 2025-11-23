@@ -1,6 +1,12 @@
 # olist-ecommerce-analysis
 Brazilian E-Commerce Data Analysis with Python
 
+![Python](https://img.shields.io/badge/Python-3.10-yellow)
+![EDA](https://img.shields.io/badge/EDA-Exploratory%20Analysis-blue)
+![Statistics](https://img.shields.io/badge/Statistics-T--Test%20%7C%20ANOVA%20%7C%20ChiSquare-green)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-orange)
+
+
 # 📦 Olist Brazilian E-Commerce Data Analysis  
 *Brazilian Online Retail – Data Exploration, Statistics, Visualization & A/B Testing*
 
@@ -100,6 +106,14 @@ Kredi kartı siparişlerinde teslim edilmeme oranı çok düşük
 Boleto/voucher siparişleri daha riskli
 
 
+📈 Görsel Örnekler
+
+README içinde grafik göstermek için:
+
+![Delivery Boxplot](images/delivery_boxplot.png)
+![Review Distribution](images/review_scores.png)
+
+
 🛠️ Kullanılan Teknolojiler
 
 Python
@@ -111,6 +125,11 @@ Plotly, Matplotlib
 SciPy (T-Test, ANOVA, Chi-Square)
 
 Google Colab
+
+
+💾 Colab’da Grafik Kaydetme Kodu
+fig.write_image("images/delivery_boxplot.png")
+
 
 
 📘 Sonuç
