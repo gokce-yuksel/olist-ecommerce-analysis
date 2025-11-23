@@ -73,7 +73,7 @@ Bu çalışma, operasyonel süreçlerin anlaşılmasını ve müşteri davranı�
 
 ### **🟨 Teslimat Hızı ve Müşteri Memnuniyeti**
 *(Hızlı teslim vs yavaş teslim — T-test sonucu görselleştirilmiştir)*  
-![Delivery Time vs Review Score](images/delivery_time_vs_review_score_boxplot.png)
+![Delivery Time vs Review Score](images/delivery_time_vs_review_score.png)
 
 ---
 
